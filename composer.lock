@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56af5390b8c20bbd3afe2e56a088453d",
+    "content-hash": "54b9c5c8b1a1297440268c1a06282fc2",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1337,6 +1337,66 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "spatie/laravel-partialcache",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-partialcache.git",
+                "reference": "ea912501d3557682b3d306d8ed1a19ec13e400c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-partialcache/zipball/ea912501d3557682b3d306d8ed1a19ec13e400c3",
+                "reference": "ea912501d3557682b3d306d8ed1a19ec13e400c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\PartialCache\\PartialCacheServiceProvider"
+                    ],
+                    "aliases": {
+                        "PartialCache": "Spatie\\PartialCache\\PartialCacheFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\PartialCache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Blade directive to cache rendered partials in laravel",
+            "homepage": "https://github.com/spatie/laravel-partialcache",
+            "keywords": [
+                "cache",
+                "partial",
+                "spatie",
+                "view"
+            ],
+            "abandoned": true,
+            "time": "2018-04-16T15:27:14+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

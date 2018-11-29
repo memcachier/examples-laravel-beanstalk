@@ -41,9 +41,8 @@
           <table class="table table-striped">
             @foreach ($tasks as $task)
               <tr>
-                <td class="table-text">
-                  <div>{{ $task->name }}</div>
-                </td>
+                <!-- Task Name -->
+                @cache('task.name', ['task' => $task], null, $task->id)
 
                 <td>
                   <!-- Delete Button -->
