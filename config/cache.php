@@ -55,8 +55,8 @@ return [
             'driver' => 'memcached',
             'persistent_id' => 'memcached_pool_id',
             'sasl' => [
-                env('MEMCACHIER_USERNAME'),
-                env('MEMCACHIER_PASSWORD'),
+                config('memcachier.MEMCACHIER_USERNAME'),
+                config('memcachier.MEMCACHIER_PASSWORD'),
             ],
             'options' => [
                 // some nicer default options
@@ -83,7 +83,7 @@ return [
                     'port' => $parts[1],
                     'weight' => 100,
                 ];
-              }, explode(",", env('MEMCACHIER_SERVERS', 'localhost:11211')))
+              }, explode(",", config('memcachier.MEMCACHIER_SERVERS')))
         ],
 
         'redis' => [
